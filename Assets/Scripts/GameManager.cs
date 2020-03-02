@@ -19,9 +19,18 @@ public class GameManager : Singleton<GameManager>
     private Vector2 _gravityRight = new Vector2(9.8f, 0f);
     private Vector2 _gravityLeft = new Vector2(-9.8f, 0f);
 
+    private List<Rigidbody2D> movingObjects = new List<Rigidbody2D>();
+
 
     private void Start() {
-        _player = Player.Instance.GetComponent<Rigidbody2D>();    
+        //_player = FindObjectOfType<Player>().GetComponent<Rigidbody2D>();
+        _player = Player.Instance.GetComponent<Rigidbody2D>();
+        foreach(Rigidbody2D rigibody in FindObjectsOfType<Rigidbody2D>())
+        {
+            if (rigibody.CompareTag("PhysicObject") ){
+                movingObjects.Add(rigibody);
+            }
+        }
     }
 
     #if UNITY_EDITOR
@@ -55,8 +64,17 @@ public class GameManager : Singleton<GameManager>
             }
 
 
-            Physics2D.gravity = _gravityDirection * _gravityMultiplier;
+            //Physics2D.gravity = _gravityDirection * _gravityMultiplier;
+
             _player.velocity = _gravityDirection * _gravityMultiplier;
+
+            if(movingObjects.Count > 0)
+            {
+                foreach(Rigidbody2D rigibody in movingObjects)
+                {
+                    rigibody.velocity = _gravityDirection * _gravityMultiplier;
+                }
+            }
 
         }
     }
