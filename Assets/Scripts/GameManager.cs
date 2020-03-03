@@ -7,29 +7,31 @@ using Doozy.Engine;
 
 public class GameManager : Singleton<GameManager>
 {
-    [ReadOnly] [SerializeField] private Vector2 _gravityDirection = new Vector2(0f, -9.8f);
-    [SerializeField] private float _gravityMultiplier = 1f;
+    [ReadOnly] [SerializeField] public Vector2 _gravityDirection = new Vector2(0f, -9.8f);
+    [ReadOnly] [SerializeField] public Vector2 _externalGravity = Vector2.zero;
+    [SerializeField] public float _gravityMultiplier = 1f;
+    
 
     private Rigidbody2D _player;
 
     private bool _canMove = true;
 
-    private Vector2 _gravityDown = new Vector2(0f, -9.8f);
-    private Vector2 _gravityUp = new Vector2(0f, 9.8f);
-    private Vector2 _gravityRight = new Vector2(9.8f, 0f);
-    private Vector2 _gravityLeft = new Vector2(-9.8f, 0f);
+    public enum _directionData { UpDown, RightLeft };
+    private _directionData _direction = default;
+    [HideInInspector] public Vector2 _gravityDown = new Vector2(0f, -9.8f);
+    [HideInInspector] public Vector2 _gravityUp = new Vector2(0f, 9.8f);
+    [HideInInspector] public Vector2 _gravityRight = new Vector2(9.8f, 0f);
+    [HideInInspector] public Vector2 _gravityLeft = new Vector2(-9.8f, 0f);
 
-    private List<Rigidbody2D> movingObjects = new List<Rigidbody2D>();
+    private List<Physic_Movement> movingObjects = new List<Physic_Movement>();
 
 
     private void Start() {
         //_player = FindObjectOfType<Player>().GetComponent<Rigidbody2D>();
         _player = Player.Instance.GetComponent<Rigidbody2D>();
-        foreach(Rigidbody2D rigibody in FindObjectsOfType<Rigidbody2D>())
-        {
-            if (rigibody.CompareTag("PhysicObject") ){
-                movingObjects.Add(rigibody);
-            }
+        foreach(Physic_Movement physic_object in FindObjectsOfType<Physic_Movement>())
+        { 
+            movingObjects.Add(physic_object);
         }
     }
 
@@ -41,41 +43,51 @@ public class GameManager : Singleton<GameManager>
         {
             if(Input.GetButtonDown("Up")){
                _gravityDirection = _gravityUp;
-               print("Up");
+                //_direction = _directionData.UpDown;
                UI_Manager.Instance.AddMovementToCounter();
             }
 
             if(Input.GetButtonDown("Down")){
                _gravityDirection = _gravityDown;
-               print("Down");
-               UI_Manager.Instance.AddMovementToCounter();
+                //_direction = _directionData.UpDown;
+                UI_Manager.Instance.AddMovementToCounter();
             }
 
             if(Input.GetButtonDown("Right")){
                _gravityDirection = _gravityRight;
-               print("Right");
-               UI_Manager.Instance.AddMovementToCounter();
+                //_direction = _directionData.RightLeft;
+                UI_Manager.Instance.AddMovementToCounter();
             }
 
             if(Input.GetButtonDown("Left")){
                _gravityDirection = _gravityLeft;
-               print("Left");
-               UI_Manager.Instance.AddMovementToCounter();
+                //_direction = _directionData.RightLeft;
+                UI_Manager.Instance.AddMovementToCounter();
             }
 
+            ApplyForce();
 
-            //Physics2D.gravity = _gravityDirection * _gravityMultiplier;
+        }
+    }
 
-            _player.velocity = _gravityDirection * _gravityMultiplier;
+    public virtual void ApplyForce()
+    {
+        /*
+         * Permet de modifer toute la gravité de la scene. Comportement réaliste
+         */
+        //Physics2D.gravity = _gravityDirection * _gravityMultiplier;
 
-            if(movingObjects.Count > 0)
-            {
-                foreach(Rigidbody2D rigibody in movingObjects)
-                {
-                    rigibody.velocity = _gravityDirection * _gravityMultiplier;
-                }
+
+        /*
+         * Permet déplacer les object indépedemant. Comportement non réaliste
+         */
+        if (movingObjects.Count > 0)
+        {
+            foreach (Physic_Movement physic_objects in movingObjects)
+            { 
+           
+                physic_objects.Moving();
             }
-
         }
     }
 
@@ -86,9 +98,14 @@ public class GameManager : Singleton<GameManager>
 
     }
 
-    public void LoadScene(string sceneName)
+    public void LoadNextLevel()
     {
-        SceneManager.LoadSceneAsync(sceneName);
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
     #endif
