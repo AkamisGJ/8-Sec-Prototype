@@ -7,7 +7,7 @@ public class EndLevel : MonoBehaviour
     //public string nameOfLevel = null;
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {

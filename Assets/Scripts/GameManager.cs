@@ -35,8 +35,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    #if UNITY_EDITOR
-    // Update is called once per frame
+    //#if UNITY_EDITOR
     void Update()
     {
         if (_canMove)
@@ -69,6 +68,7 @@ public class GameManager : Singleton<GameManager>
 
         }
     }
+    //#endif
 
     public virtual void ApplyForce()
     {
@@ -108,5 +108,5 @@ public class GameManager : Singleton<GameManager>
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
-    #endif
+    
 }

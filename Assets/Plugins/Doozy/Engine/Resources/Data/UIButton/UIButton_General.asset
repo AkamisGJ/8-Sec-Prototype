@@ -21,3 +21,7 @@ MonoBehaviour:
   - Quit
   - Pause
   - Restart
+  - Play
+  - Options
+  - Credit
+  - Select Level
