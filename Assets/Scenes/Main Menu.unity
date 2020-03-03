@@ -2466,7 +2466,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 1231106106}
 --- !u!114 &372179347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5194,7 +5193,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 775608779}
 --- !u!114 &707004511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5498,7 +5496,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -8939,7 +8937,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 1919943476}
 --- !u!114 &1399646615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11583,7 +11580,6 @@ MonoBehaviour:
     PresetName: 
   TargetLabel: 2
   TextLabel: {fileID: 0}
-  TextMeshProLabel: {fileID: 1758834797}
 --- !u!114 &1853153812
 MonoBehaviour:
   m_ObjectHideFlags: 0
