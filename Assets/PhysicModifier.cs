@@ -38,6 +38,26 @@ public class PhysicModifier : MonoBehaviour
         if (collision.GetComponent<Physic_Movement>())
         {
             Physic_Movement moving_object = collision.GetComponent<Physic_Movement>();
+
+            if (collision.CompareTag("Player"))
+            {
+                if (GameManager.Instance._gravityDirection == _physicForce)
+                {
+                    GameManager.Instance._gravityDirection = Vector2.zero;
+                    GameManager.Instance._direction = default;
+                }
+
+                if((_direction == _directionData.Up) || (_direction == _directionData.Down) )
+                {
+                    GameManager.Instance.actualBlocking = GameManager._blockingMovement.BlockUpDown;
+                }
+
+                if ((_direction == _directionData.Right) || (_direction == _directionData.Left))
+                {
+                    GameManager.Instance.actualBlocking = GameManager._blockingMovement.BlockRightLeft;
+                }
+            }
+            
             moving_object._externalGravity = _physicForce;
         }
     }
@@ -48,6 +68,8 @@ public class PhysicModifier : MonoBehaviour
         {
             Physic_Movement moving_object = collision.GetComponent<Physic_Movement>();
             moving_object._externalGravity = Vector2.zero;
+            GameManager.Instance.actualBlocking = GameManager._blockingMovement.None;
+
         }
     }
 }

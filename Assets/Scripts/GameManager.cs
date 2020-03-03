@@ -10,14 +10,18 @@ public class GameManager : Singleton<GameManager>
     [ReadOnly] [SerializeField] public Vector2 _gravityDirection = new Vector2(0f, -9.8f);
     [ReadOnly] [SerializeField] public Vector2 _externalGravity = Vector2.zero;
     [SerializeField] public float _gravityMultiplier = 1f;
-    
+
 
     private Rigidbody2D _player;
 
     private bool _canMove = true;
 
     public enum _directionData { UpDown, RightLeft };
-    private _directionData _direction = default;
+    [ReadOnly] public _directionData _direction = default;
+
+    public enum _blockingMovement { BlockUpDown, BlockRightLeft, None };
+    public _blockingMovement actualBlocking = _blockingMovement.None;
+
     [HideInInspector] public Vector2 _gravityDown = new Vector2(0f, -9.8f);
     [HideInInspector] public Vector2 _gravityUp = new Vector2(0f, 9.8f);
     [HideInInspector] public Vector2 _gravityRight = new Vector2(9.8f, 0f);
@@ -40,28 +44,36 @@ public class GameManager : Singleton<GameManager>
     {
         if (_canMove)
         {
-            if(Input.GetButtonDown("Up")){
-               _gravityDirection = _gravityUp;
-                //_direction = _directionData.UpDown;
-               UI_Manager.Instance.AddMovementToCounter();
+            if(actualBlocking != _blockingMovement.BlockUpDown)
+            {
+                if(Input.GetButtonDown("Up")){
+                   _gravityDirection = _gravityUp;
+                    _direction = _directionData.UpDown;
+                   UI_Manager.Instance.AddMovementToCounter();
+                }
+
+                if(Input.GetButtonDown("Down")){
+                   _gravityDirection = _gravityDown;
+                    _direction = _directionData.UpDown;
+                    UI_Manager.Instance.AddMovementToCounter();
+                }
+
             }
 
-            if(Input.GetButtonDown("Down")){
-               _gravityDirection = _gravityDown;
-                //_direction = _directionData.UpDown;
-                UI_Manager.Instance.AddMovementToCounter();
-            }
+            if(actualBlocking != _blockingMovement.BlockRightLeft)
+            {
+                if(Input.GetButtonDown("Right")){
+                   _gravityDirection = _gravityRight;
+                    _direction = _directionData.RightLeft;
+                    UI_Manager.Instance.AddMovementToCounter();
+                }
 
-            if(Input.GetButtonDown("Right")){
-               _gravityDirection = _gravityRight;
-                //_direction = _directionData.RightLeft;
-                UI_Manager.Instance.AddMovementToCounter();
-            }
-
-            if(Input.GetButtonDown("Left")){
-               _gravityDirection = _gravityLeft;
-                //_direction = _directionData.RightLeft;
-                UI_Manager.Instance.AddMovementToCounter();
+                if (Input.GetButtonDown("Left"))
+                {
+                    _gravityDirection = _gravityLeft;
+                    _direction = _directionData.RightLeft;
+                    UI_Manager.Instance.AddMovementToCounter();
+                }
             }
 
             ApplyForce();
