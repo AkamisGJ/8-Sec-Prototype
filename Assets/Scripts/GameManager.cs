@@ -103,6 +103,11 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public void GetBonus()
+    {
+        print("Get a Bonus !");
+    }
+
     public void EndLevel()
     {
         _canMove = false;
