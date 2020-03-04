@@ -8,6 +8,8 @@ using System;
 
 public class GameManager : Singleton<GameManager>
 {
+    [Title("Gravity")]
+
     [ReadOnly] [SerializeField] public Vector2 _gravityDirection = new Vector2(0f, -9.8f);
     [ReadOnly] [SerializeField] public Vector2 _externalGravity = Vector2.zero;
     [SerializeField] public float _gravityMultiplier = 1f;
@@ -28,7 +30,10 @@ public class GameManager : Singleton<GameManager>
     [HideInInspector] public Vector2 _gravityRight = new Vector2(9.8f, 0f);
     [HideInInspector] public Vector2 _gravityLeft = new Vector2(-9.8f, 0f);
 
-    [SerializeField] private float _accelerationSpeed = 1f;
+    [Title("Acceleration")]
+    [InfoBox("Controlle la vitesse de déplacement des objects")]
+    [SerializeField] private AnimationCurve _accelerationSpeedCurve;
+    private float _accelerationCurveTime = 0f;
     [HideInInspector] public float _accelerationValue;
 
 
@@ -138,7 +143,7 @@ public class GameManager : Singleton<GameManager>
                 }
             }
 
-            _accelerationValue = 0f;
+            ResetAcceleration();
         }
     }
 
@@ -158,13 +163,19 @@ public class GameManager : Singleton<GameManager>
          */
         if (movingObjects.Count > 0)
         {
-            _accelerationValue += Time.deltaTime * _accelerationSpeed;
+            _accelerationCurveTime += Time.deltaTime;
+            _accelerationValue = _accelerationSpeedCurve.Evaluate(_accelerationCurveTime);
             foreach (Physic_Movement physic_objects in movingObjects)
             { 
            
                 physic_objects.Moving();
             }
         }
+    }
+
+    public void ResetAcceleration()
+    {
+        _accelerationCurveTime = 0f;
     }
 
     public void GetBonus()
