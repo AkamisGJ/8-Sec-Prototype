@@ -7,8 +7,7 @@ public class PhysicModifier : MonoBehaviour
     public enum _directionData { Up, Down, Right, Left};
     public _directionData _direction;
     private Vector2 _physicForce = Vector2.zero;
-    
-
+    [SerializeField] private float _physicForceMultiplieur = 1f;
 
     private void Start()
     {
@@ -58,7 +57,7 @@ public class PhysicModifier : MonoBehaviour
                 }
             }
             
-            moving_object._externalGravity = _physicForce;
+            moving_object._externalGravity = _physicForce * _physicForceMultiplieur;
         }
     }
 
