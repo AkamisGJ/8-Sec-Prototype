@@ -13,33 +13,71 @@ MonoBehaviour:
   m_Name: Ledger
   m_EditorClassIdentifier: 
   OutstandingTasks:
-  - Title: Finir Main Menu
-    CreationDate: 04/03/2020 | 13:48
+  - Title: UI Menu de victoire
+    CreationDate: 04/03/2020 | 19:28
+    CompletionDate: 
+    HasDetails: 1
+    Details: "Message de victoire IN-Game\nVFX de victoire In-Game\n\n[Passage  nouvelle
+      vus]\n\nStage Clear\n\nEtoile gagn\xE9\n\nMenuMain button\nContinue button"
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.8867924, g: 0.12967247, b: 0.12967247, a: 1}
+  - Title: UI Main Menu
+    CreationDate: 04/03/2020 | 19:28
     CompletionDate: 
     HasDetails: 0
     Details: 
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1
-    DrawColor: {r: 0.9339623, g: 0.1182185, b: 0, a: 1}
-  - Title: Finir menu Win & Loose
-    CreationDate: 04/03/2020 | 13:49
+    DrawColor: {r: 0.8867924, g: 0.12967247, b: 0.12967247, a: 1}
+  - Title: UI Menu In-game
+    CreationDate: 04/03/2020 | 19:31
+    CompletionDate: 
+    HasDetails: 1
+    Details: "Bouton retour menu\nBouton recommencer\nNum\xE9ro du stage\nNombre
+      de mouvement"
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.8867924, g: 0.12967247, b: 0.12967247, a: 1}
+  - Title: Tutoriel sur le niveau 1
+    CreationDate: 04/03/2020 | 19:32
     CompletionDate: 
     HasDetails: 0
     Details: 
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1
-    DrawColor: {r: 0.9339623, g: 0.1182185, b: 0, a: 1}
-  - Title: "Ajouter accel\xE9ration"
-    CreationDate: 04/03/2020 | 15:43
+    DrawColor: {r: 1, g: 0.7468277, b: 0, a: 1}
+  - Title: Trail sur le doigt du joueur
+    CreationDate: 04/03/2020 | 19:32
     CompletionDate: 
     HasDetails: 0
     Details: 
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1
-    DrawColor: {r: 0.8352942, g: 0.10588236, b: 0, a: 1}
+    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
+  - Title: "Monter le changement de gravit\xE9"
+    CreationDate: 04/03/2020 | 19:33
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
+  - Title: Ajouter des sound Effect + de la musique
+    CreationDate: 04/03/2020 | 19:33
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
@@ -50,4 +88,13 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0.9339623, g: 0.1182185, b: 0, a: 1}
+  - Title: "Ajouter accel\xE9ration"
+    CreationDate: 04/03/2020 | 15:43
+    CompletionDate: 04/03/2020 | 19:28
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.8352942, g: 0.10588236, b: 0, a: 1}
   DeferredTasks: []
