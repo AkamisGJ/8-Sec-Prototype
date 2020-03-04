@@ -17,10 +17,10 @@ public class Physic_Movement : MonoBehaviour
     }
 
 
+
     public void Moving()
     {
         _gravityDirection = GameManager.Instance._gravityDirection;
-        _rigidbody2D.velocity = (_gravityDirection + _externalGravity) * GameManager.Instance._gravityMultiplier * _personalGravityMultiplier;
-
+        _rigidbody2D.velocity = ( (_gravityDirection + _externalGravity) * GameManager.Instance._gravityMultiplier * _personalGravityMultiplier ) * GameManager.Instance._accelerationValue;
     }
 }

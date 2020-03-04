@@ -4,6 +4,7 @@ using UnityEngine;
 using Sirenix.OdinInspector;
 using UnityEngine.SceneManagement;
 using Doozy.Engine;
+using System;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -27,11 +28,16 @@ public class GameManager : Singleton<GameManager>
     [HideInInspector] public Vector2 _gravityRight = new Vector2(9.8f, 0f);
     [HideInInspector] public Vector2 _gravityLeft = new Vector2(-9.8f, 0f);
 
+    [SerializeField] private float _accelerationSpeed = 1f;
+    [HideInInspector] public float _accelerationValue;
+
+
     private List<Physic_Movement> movingObjects = new List<Physic_Movement>();
 
 
+
     private void Start() {
-        //_player = FindObjectOfType<Player>().GetComponent<Rigidbody2D>();
+        SwipeDetector.OnSwipe += ChangeGravity;
         _player = Player.Instance.GetComponent<Rigidbody2D>();
         foreach(Physic_Movement physic_object in FindObjectsOfType<Physic_Movement>())
         { 
@@ -39,7 +45,7 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    //#if UNITY_EDITOR
+    #if UNITY_WEBGL
     void Update()
     {
         if (_canMove)
@@ -80,6 +86,63 @@ public class GameManager : Singleton<GameManager>
 
         }
     }
+    #endif
+
+    //#if UNITY_ANDROID
+    void Update()
+    {
+        if (_canMove)
+        {
+            ApplyForce();
+        }
+    }
+
+    private void ChangeGravity(SwipeData data){
+        if (_canMove)
+        {
+            if(actualBlocking != _blockingMovement.BlockUpDown)
+            {
+                switch (data.Direction)
+                {
+                    case SwipeDirection.Up:
+                        _gravityDirection = _gravityUp;
+                        _direction = _directionData.UpDown;
+                        UI_Manager.Instance.AddMovementToCounter();
+
+                        break;
+
+                    case SwipeDirection.Down:
+                        _gravityDirection = _gravityDown;
+                        _direction = _directionData.UpDown;
+                        UI_Manager.Instance.AddMovementToCounter();
+                        break;
+                }
+            }
+
+            if (actualBlocking != _blockingMovement.BlockRightLeft)
+            {
+                switch (data.Direction)
+                {
+                    case SwipeDirection.Right:
+                        _gravityDirection = _gravityRight;
+                        _direction = _directionData.RightLeft;
+                        UI_Manager.Instance.AddMovementToCounter();
+
+                        break;
+
+                    case SwipeDirection.Left:
+                        _gravityDirection = _gravityLeft;
+                        _direction = _directionData.RightLeft;
+                        UI_Manager.Instance.AddMovementToCounter();
+                        break;
+                }
+            }
+
+            _accelerationValue = 0f;
+        }
+    }
+
+
     //#endif
 
     public virtual void ApplyForce()
@@ -95,6 +158,7 @@ public class GameManager : Singleton<GameManager>
          */
         if (movingObjects.Count > 0)
         {
+            _accelerationValue += Time.deltaTime * _accelerationSpeed;
             foreach (Physic_Movement physic_objects in movingObjects)
             { 
            
@@ -117,12 +181,14 @@ public class GameManager : Singleton<GameManager>
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+        SwipeDetector.OnSwipe -= ChangeGravity;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void RestartLevel()
     {
-        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SwipeDetector.OnSwipe -= ChangeGravity;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     

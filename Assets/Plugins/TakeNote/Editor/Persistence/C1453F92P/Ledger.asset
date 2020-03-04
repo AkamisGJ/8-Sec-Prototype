@@ -13,15 +13,6 @@ MonoBehaviour:
   m_Name: Ledger
   m_EditorClassIdentifier: 
   OutstandingTasks:
-  - Title: Ajouter controlle Android
-    CreationDate: 04/03/2020 | 13:48
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.9339623, g: 0.1182185, b: 0, a: 1}
   - Title: Finir Main Menu
     CreationDate: 04/03/2020 | 13:48
     CompletionDate: 
@@ -40,5 +31,23 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0.9339623, g: 0.1182185, b: 0, a: 1}
-  CompletedTasks: []
+  - Title: "Ajouter accel\xE9ration"
+    CreationDate: 04/03/2020 | 15:43
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.8352942, g: 0.10588236, b: 0, a: 1}
+  CompletedTasks:
+  - Title: Ajouter controlle Android
+    CreationDate: 04/03/2020 | 13:48
+    CompletionDate: 04/03/2020 | 15:43
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.9339623, g: 0.1182185, b: 0, a: 1}
   DeferredTasks: []

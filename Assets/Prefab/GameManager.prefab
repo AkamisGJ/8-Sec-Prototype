@@ -44,4 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gravityDirection: {x: 0, y: -9.8}
-  _gravityMultiplier: 5
+  _externalGravity: {x: 0, y: 0}
+  _gravityMultiplier: 2
+  _direction: 0
+  actualBlocking: 2
+  _gravityDown: {x: 0, y: -9.8}
+  _gravityUp: {x: 0, y: 9.8}
+  _gravityRight: {x: 9.8, y: 0}
+  _gravityLeft: {x: -9.8, y: 0}
