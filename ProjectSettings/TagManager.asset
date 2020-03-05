@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PhysicObject
   - Trail_Tuto
+  - etoile_bonus
   layers:
   - Default
   - TransparentFX

@@ -39,6 +39,8 @@ public class GameManager : Singleton<GameManager>
 
     private List<Physic_Movement> movingObjects = new List<Physic_Movement>();
 
+    private GravityForVisualEffect etoileBonus = null;
+
 
 
     private void Start() {
@@ -48,6 +50,8 @@ public class GameManager : Singleton<GameManager>
         { 
             movingObjects.Add(physic_object);
         }
+
+        etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponent<GravityForVisualEffect>();
     }
 
     #if UNITY_WEBGL
@@ -180,6 +184,7 @@ public class GameManager : Singleton<GameManager>
 
     public void GetBonus()
     {
+        etoileBonus.PlayParticuleSystem();
         StarCount.Instance.UnlockStar(2);
     }
 
