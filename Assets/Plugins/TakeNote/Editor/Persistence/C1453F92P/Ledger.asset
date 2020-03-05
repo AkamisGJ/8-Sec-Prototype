@@ -105,6 +105,16 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
+  - Title: Changer le Gesture detecotor par celui de Doozy pour faire une version
+      WebL
+    CreationDate: 05/03/2020 | 01:36
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
