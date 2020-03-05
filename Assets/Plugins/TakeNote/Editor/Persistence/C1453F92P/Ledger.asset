@@ -61,8 +61,8 @@ MonoBehaviour:
   - Title: Dernier niveau a revoir "Pacing"
     CreationDate: 04/03/2020 | 23:58
     CompletionDate: 
-    HasDetails: 0
-    Details: 
+    HasDetails: 1
+    Details: Et niveau 8
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1

@@ -264,9 +264,9 @@ RectTransform:
   m_Father: {fileID: 3285210229222277035}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188.1, y: 662.30005}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 188.1, y: -54}
   m_SizeDelta: {x: 130, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1807506341
@@ -2862,7 +2862,7 @@ MonoBehaviour:
   - {fileID: 5182868634512174691}
   - {fileID: 5182868634694524632}
   - {fileID: 5182868634290549507}
-  maximumMovementForThisLevel: 15
+  maximumMovementForThisLevel: 4
 --- !u!1 &2816870555366003411
 GameObject:
   m_ObjectHideFlags: 0
@@ -2973,7 +2973,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -389}
+  m_AnchoredPosition: {x: 0, y: -258}
   m_SizeDelta: {x: 200, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3285210228914374817
@@ -5803,10 +5803,10 @@ MonoBehaviour:
         Elasticity: 1
         NumberOfLoops: -1
         LoopType: 1
-        Direction: 1
+        Direction: 3
         CustomPosition: {x: 0, y: 0, z: 0}
         EaseType: 0
-        Ease: 2
+        Ease: 3
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
@@ -5859,11 +5859,11 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.6
+        Duration: 0.2
       Rotate:
         AnimationType: 1
-        Enabled: 1
-        From: {x: 90, y: 0, z: 0}
+        Enabled: 0
+        From: {x: 0, y: 180, z: 0}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
         UseCustomFromAndTo: 0
@@ -5873,7 +5873,7 @@ MonoBehaviour:
         LoopType: 1
         RotateMode: 0
         EaseType: 0
-        Ease: 17
+        Ease: 27
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
@@ -5956,8 +5956,8 @@ MonoBehaviour:
         Duration: 0.4
       Scale:
         AnimationType: 1
-        Enabled: 1
-        From: {x: 0, y: 0, z: 0}
+        Enabled: 0
+        From: {x: 0, y: 0, z: 1}
         To: {x: 0, y: 0, z: 0}
         By: {x: 0, y: 0, z: 0}
         UseCustomFromAndTo: 0
@@ -5966,7 +5966,7 @@ MonoBehaviour:
         NumberOfLoops: -1
         LoopType: 1
         EaseType: 0
-        Ease: 17
+        Ease: 27
         AnimationCurve:
           serializedVersion: 2
           m_Curve:
@@ -6019,7 +6019,7 @@ MonoBehaviour:
           m_PostInfinity: 2
           m_RotationOrder: 4
         StartDelay: 0
-        Duration: 0.4
+        Duration: 0.8
       Fade:
         AnimationType: 1
         Enabled: 1
@@ -6037,7 +6037,7 @@ MonoBehaviour:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 4
-        StartDelay: 0.2
+        StartDelay: 0
         Duration: 0.2
     AutoStartLoopAnimation: 1
     LoadSelectedPresetAtRuntime: 0
@@ -6082,8 +6082,8 @@ MonoBehaviour:
         SoundName: No Sound
         AudioClip: {fileID: 0}
         OutputAudioMixerGroup: {fileID: 0}
-    PresetCategory: Basic
-    PresetName: SubsideHorizontal
+    PresetCategory: Fade
+    PresetName: InFast
   ShowProgressor: {fileID: 0}
   TargetOrientation: 2
   UpdateHideProgressorOnShow: 0
@@ -11598,7 +11598,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -504}
+  m_AnchoredPosition: {x: 0, y: -446}
   m_SizeDelta: {x: 200, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7267078367356782047
@@ -14259,9 +14259,9 @@ RectTransform:
   m_Father: {fileID: 3285210229222277035}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 327.2, y: 662.30005}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 327.2, y: -54}
   m_SizeDelta: {x: 130, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &462293264944107782
@@ -14342,18 +14342,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4398018882671464052}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2536906295453657862}
-        m_MethodName: LoadScene
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &7334630217925972465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16924,6 +16913,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2500031763656270465, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2500031763656270465, guid: 8502eabe669b10c40a0d113d19cc0a4d,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2536906295453657862}
@@ -16995,7 +16989,7 @@ PrefabInstance:
     - target: {fileID: 2500031763656270471, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -621
+      value: -611
       objectReference: {fileID: 0}
     - target: {fileID: 2500031763656270471, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
