@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Congratulation.unity
     guid: 352da1888b779884cb57dbad7e2c1569
+  - enabled: 0
+    path: Assets/Scenes/Test Touch Controlpe.unity
+    guid: 160fa3993e1aa514687746f992678324
   m_configObjects: {}

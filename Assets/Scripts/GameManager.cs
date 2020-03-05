@@ -44,7 +44,9 @@ public class GameManager : Singleton<GameManager>
 
 
     private void Start() {
+#if UNITY_ANDROID
         SwipeDetector.OnSwipe += ChangeGravity;
+#endif
         _player = Player.Instance.GetComponent<Rigidbody2D>();
         foreach(Physic_Movement physic_object in FindObjectsOfType<Physic_Movement>())
         { 
@@ -54,7 +56,7 @@ public class GameManager : Singleton<GameManager>
         //etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponent<GravityForVisualEffect>();
     }
 
-    #if UNITY_WEBGL
+#if UNITY_WEBGL
     void Update()
     {
         if (_canMove)
@@ -95,9 +97,9 @@ public class GameManager : Singleton<GameManager>
 
         }
     }
-    #endif
+#endif
 
-    //#if UNITY_ANDROID
+#if UNITY_ANDROID
     void Update()
     {
         if (_canMove)
@@ -154,7 +156,7 @@ public class GameManager : Singleton<GameManager>
     }
 
 
-    //#endif
+#endif
 
     public virtual void ApplyForce()
     {
@@ -213,13 +215,17 @@ public class GameManager : Singleton<GameManager>
 
     public void LoadNextLevel()
     {
+#if UNITY_ANDROID
         SwipeDetector.OnSwipe -= ChangeGravity;
+#endif
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void RestartLevel()
     {
+#if UNITY_ANDROID
         SwipeDetector.OnSwipe -= ChangeGravity;
+#endif
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 

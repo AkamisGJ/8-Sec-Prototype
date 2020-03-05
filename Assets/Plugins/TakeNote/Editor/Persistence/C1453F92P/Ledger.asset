@@ -88,6 +88,15 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0, g: 0, b: 0, a: 1}
+  - Title: Add swipe with mouse
+    CreationDate: 05/03/2020 | 16:45
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.26237094, g: 0.8301887, b: 0.74106985, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
