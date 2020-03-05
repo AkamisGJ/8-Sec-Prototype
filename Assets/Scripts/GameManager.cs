@@ -126,6 +126,7 @@ public class GameManager : Singleton<GameManager>
                         UI_Manager.Instance.AddMovementToCounter();
                         break;
                 }
+                SwipeDetector.Instance.PlaySoundSwipe();
             }
 
             if (actualBlocking != _blockingMovement.BlockRightLeft)
@@ -145,6 +146,7 @@ public class GameManager : Singleton<GameManager>
                         UI_Manager.Instance.AddMovementToCounter();
                         break;
                 }
+                SwipeDetector.Instance.PlaySoundSwipe();
             }
 
             ResetAcceleration();

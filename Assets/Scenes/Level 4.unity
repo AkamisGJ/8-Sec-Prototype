@@ -1232,25 +1232,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4079504321021640736, guid: 949d366ff4d3c29448061c1577d4e8c3,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.0996432
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079504321021640736, guid: 949d366ff4d3c29448061c1577d4e8c3,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9860342
-      objectReference: {fileID: 0}
     - target: {fileID: 4079504321021640740, guid: 949d366ff4d3c29448061c1577d4e8c3,
         type: 3}
       propertyPath: m_Name
       value: Physic Zone
-      objectReference: {fileID: 0}
-    - target: {fileID: 4079504321021640741, guid: 949d366ff4d3c29448061c1577d4e8c3,
-        type: 3}
-      propertyPath: _direction
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 949d366ff4d3c29448061c1577d4e8c3, type: 3}
@@ -1519,8 +1504,8 @@ Transform:
   - {fileID: 29777231}
   - {fileID: 1051798218}
   - {fileID: 2133415000}
-  - {fileID: 1054758371}
   - {fileID: 1607893580}
+  - {fileID: 1054758371}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2069,6 +2054,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232363187, guid: 1b439333b74f0f24bbbd319829ab862b, type: 3}
+      propertyPath: m_SortingLayer
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 2553270459318422456, guid: 1b439333b74f0f24bbbd319829ab862b,
         type: 3}
       propertyPath: m_LocalPosition.x

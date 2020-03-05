@@ -805,6 +805,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 507334898, guid: 8825dbeaffc93d24f9ebc10c6abdd879, type: 3}
+      propertyPath: DebugMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3613529326476848280, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -919,11 +923,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas - GameCanvas - Tutoriel
-      objectReference: {fileID: 0}
-    - target: {fileID: 6619675184574253550, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8825dbeaffc93d24f9ebc10c6abdd879, type: 3}

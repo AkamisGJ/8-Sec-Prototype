@@ -26,6 +26,19 @@ public class SwipeDetector : Singleton<SwipeDetector>
         }
     }
 
+    [Header("SoundEffect")]
+    private AudioSource _audioSource = null;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
+    public void PlaySoundSwipe()
+    {
+        _audioSource.Play();
+    }
+
     private void Update()
     {
         foreach (Touch touch in Input.touches)
