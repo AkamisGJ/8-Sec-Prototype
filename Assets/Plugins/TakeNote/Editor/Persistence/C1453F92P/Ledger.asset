@@ -43,8 +43,8 @@ MonoBehaviour:
   - Title: Univers Spacial visuel
     CreationDate: 04/03/2020 | 23:57
     CompletionDate: 
-    HasDetails: 0
-    Details: 
+    HasDetails: 1
+    Details: "Ajouter \xE9l\xE9ment graphique"
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1
@@ -77,6 +77,17 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
+  - Title: BUG TRACKER
+    CreationDate: 05/03/2020 | 06:39
+    CompletionDate: 
+    HasDetails: 1
+    Details: "EN build :\n\nPas de FX pour les \xE9toile\nCamera en dehors du menu
+      pour le main menu\nLe compteur de mouvement qui double quand on change de scene
+      par Nody"
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0, g: 0, b: 0, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
