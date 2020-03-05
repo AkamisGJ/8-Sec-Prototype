@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4190864165193414648}
   - component: {fileID: 4190864165193414649}
+  - component: {fileID: 8059037623428344350}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -52,3 +53,22 @@ MonoBehaviour:
   _gravityUp: {x: 0, y: 9.8}
   _gravityRight: {x: 9.8, y: 0}
   _gravityLeft: {x: -9.8, y: 0}
+  _accelerationSpeedCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _accelerationValue: 0
+--- !u!114 &8059037623428344350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190864165193414631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f402fc3e8517a684f9f3cbcee90b4232, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

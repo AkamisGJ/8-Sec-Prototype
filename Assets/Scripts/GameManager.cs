@@ -180,7 +180,7 @@ public class GameManager : Singleton<GameManager>
 
     public void GetBonus()
     {
-        print("Get a Bonus !");
+        StarCount.Instance.UnlockStar(2);
     }
 
     public void EndLevel()
@@ -188,6 +188,20 @@ public class GameManager : Singleton<GameManager>
         _canMove = false;
         GameEventMessage.SendEvent("End_Level");
 
+        //Stars Count
+        StarCount.Instance.UnlockStar(1);
+        if(UI_Manager.Instance.GetCountMovement() <= StarCount.Instance.maximumMovementForThisLevel)
+        {
+            StarCount.Instance.UnlockStar(3);
+        }
+
+        StartCoroutine(StarCount.Instance.SendDataToUI());
+
+    }
+
+    public void LoadScene(int buildIndex)
+    {
+        SceneManager.LoadScene(buildIndex);
     }
 
     public void LoadNextLevel()

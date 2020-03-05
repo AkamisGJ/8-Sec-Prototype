@@ -51,15 +51,6 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 1, g: 0.7468277, b: 0, a: 1}
-  - Title: Trail sur le doigt du joueur
-    CreationDate: 04/03/2020 | 19:32
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
   - Title: "Monter le changement de gravit\xE9"
     CreationDate: 04/03/2020 | 19:33
     CompletionDate: 
@@ -78,6 +69,42 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
+  - Title: Sigh et Feedback
+    CreationDate: 04/03/2020 | 23:57
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.4533586, g: 0.8396226, b: 0.29703632, a: 1}
+  - Title: Univers Spacial visuel
+    CreationDate: 04/03/2020 | 23:57
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.29803923, g: 0.46746796, b: 0.8392157, a: 1}
+  - Title: Dernier niveau a revoir "Pacing"
+    CreationDate: 04/03/2020 | 23:58
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.29803923, g: 0.46746796, b: 0.8392157, a: 1}
+  - Title: Light 2D
+    CreationDate: 05/03/2020 | 00:34
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
@@ -97,4 +124,13 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0.8352942, g: 0.10588236, b: 0, a: 1}
+  - Title: Trail sur le doigt du joueur
+    CreationDate: 04/03/2020 | 19:32
+    CompletionDate: 05/03/2020 | 00:34
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
   DeferredTasks: []
