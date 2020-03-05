@@ -8,8 +8,10 @@ public class Collect_Bonus : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GetComponent<AudioSource>().Play();
             GameManager.Instance.GetBonus();
-            Destroy(gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            Destroy(gameObject, 5f);
 
         }
     }
