@@ -923,7 +923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe8918a95cfc47ce97130746534b73f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DebugMode: 1
+  DebugMode: 0
   GlobalListener: 1
   OverrideTarget: 0
   TargetGameObject: {fileID: 507334896}
@@ -1358,7 +1358,7 @@ PrefabInstance:
     - target: {fileID: 3285210229428655339, guid: c089862411f61f94dbf45d1740c5da96,
         type: 3}
       propertyPath: m_Name
-      value: Canvas - GameCanvas - Tutoriel Variant
+      value: Canvas - GameCanvas - Tutoriel
       objectReference: {fileID: 0}
     - target: {fileID: 3285210229428655342, guid: c089862411f61f94dbf45d1740c5da96,
         type: 3}

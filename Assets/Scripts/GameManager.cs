@@ -39,7 +39,7 @@ public class GameManager : Singleton<GameManager>
 
     private List<Physic_Movement> movingObjects = new List<Physic_Movement>();
 
-    private GravityForVisualEffect etoileBonus = null;
+    [SerializeField] private GravityForVisualEffect etoileBonus = null;
 
 
 
@@ -51,7 +51,7 @@ public class GameManager : Singleton<GameManager>
             movingObjects.Add(physic_object);
         }
 
-        etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponent<GravityForVisualEffect>();
+        //etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponent<GravityForVisualEffect>();
     }
 
     #if UNITY_WEBGL

@@ -75,7 +75,7 @@ MonoBehaviour:
   m_debugMode: 0
   m_useFixedUpdate: 0
   m_useLateUpdate: 0
-  m_useUpdate: 0
+  m_useUpdate: 1
   m_height: 128
   m_width: 216
   m_x: 384
@@ -554,7 +554,10 @@ MonoBehaviour:
     Name: MainMenu View
   m_onEnterHideViews: []
   m_onExitShowViews: []
-  m_onExitHideViews: []
+  m_onExitHideViews:
+  - Category: General
+    InstantAction: 0
+    Name: MainMenu View
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -581,7 +584,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: 18b95ca3-ee77-4aeb-9ac1-688db5142030
-  m_lastModified: 132278421346166658
+  m_lastModified: 132278584168915768
 --- !u!114 &2680164422976455535
 MonoBehaviour:
   m_ObjectHideFlags: 1
