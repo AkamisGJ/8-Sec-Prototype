@@ -647,6 +647,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Physic Zone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4079504321021640741, guid: 949d366ff4d3c29448061c1577d4e8c3,
+        type: 3}
+      propertyPath: _direction
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 949d366ff4d3c29448061c1577d4e8c3, type: 3}
 --- !u!1001 &1036490369

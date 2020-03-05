@@ -39,7 +39,7 @@ public class GameManager : Singleton<GameManager>
 
     private List<Physic_Movement> movingObjects = new List<Physic_Movement>();
 
-    [SerializeField] private GravityForVisualEffect etoileBonus = null;
+    private ParticleSystem etoileBonus = null;
 
 
 
@@ -53,7 +53,7 @@ public class GameManager : Singleton<GameManager>
             movingObjects.Add(physic_object);
         }
 
-        //etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponent<GravityForVisualEffect>();
+        etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponentInChildren<ParticleSystem>();
     }
 
 #if UNITY_WEBGL
@@ -188,7 +188,7 @@ public class GameManager : Singleton<GameManager>
 
     public void GetBonus()
     {
-        etoileBonus.PlayParticuleSystem();
+        etoileBonus.Play();
         StarCount.Instance.UnlockStar(2);
     }
 

@@ -11,6 +11,7 @@ public class Collect_Bonus : MonoBehaviour
             GetComponent<AudioSource>().Play();
             GameManager.Instance.GetBonus();
             GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<CircleCollider2D>().enabled = false;
             Destroy(gameObject, 5f);
 
         }
