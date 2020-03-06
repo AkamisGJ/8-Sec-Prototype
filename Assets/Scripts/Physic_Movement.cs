@@ -7,12 +7,17 @@ public class Physic_Movement : MonoBehaviour
 {
     [ReadOnly] [SerializeField] private Vector2 _gravityDirection = new Vector2(0f, -9.8f);
     [ReadOnly] [SerializeField] public Vector2 _externalGravity = Vector2.zero;
+    [SerializeField] private bool is_Asteroide = false;
     [SerializeField] public float _personalGravityMultiplier = 1f;
 
     private Rigidbody2D _rigidbody2D;
 
     private void Start()
     {
+        if (is_Asteroide)
+        {
+            _personalGravityMultiplier = Random.Range(0.1f, 0.5f);
+        }
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 

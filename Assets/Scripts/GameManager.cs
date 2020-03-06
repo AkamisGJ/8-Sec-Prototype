@@ -160,12 +160,7 @@ public class GameManager : Singleton<GameManager>
 
     public virtual void ApplyForce()
     {
-        /*
-         * Permet de modifer toute la gravité de la scene. Comportement réaliste
-         */
-        //Physics2D.gravity = _gravityDirection * _gravityMultiplier;
-
-
+        
         /*
          * Permet déplacer les object indépedemant. Comportement non réaliste
          */
@@ -179,6 +174,14 @@ public class GameManager : Singleton<GameManager>
                 physic_objects.Moving();
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        /*
+         * Permet de modifer toute la gravité de la scene. Comportement réaliste
+         */
+        Physics2D.gravity = _gravityDirection * _gravityMultiplier;
     }
 
     public void ResetAcceleration()

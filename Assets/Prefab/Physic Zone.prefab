@@ -91,8 +91,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4079504321021640736}
   - component: {fileID: 4079504321021640739}
-  - component: {fileID: 4079504321021640738}
+  - component: {fileID: 5397499789629203567}
   - component: {fileID: 4079504321021640741}
+  - component: {fileID: 4079504321021640738}
+  - component: {fileID: 6283028377866204517}
   m_Layer: 0
   m_Name: Physic Zone
   m_TagString: Untagged
@@ -152,7 +154,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -465934863
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: d8372e1632323b84eaeb75ecdd91c06f, type: 3}
   m_Color: {r: 0.9528302, g: 0.94005907, b: 0.112362035, a: 0.36862746}
@@ -165,7 +167,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4079504321021640738
+--- !u!61 &5397499789629203567
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,3 +207,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _direction: 0
   _physicForceMultiplieur: 1.5
+--- !u!61 &4079504321021640738
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079504321021640740}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5, y: 5}
+  m_EdgeRadius: 0
+--- !u!249 &6283028377866204517
+AreaEffector2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079504321021640740}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 256
+  m_UseGlobalAngle: 1
+  m_ForceAngle: 90
+  m_ForceMagnitude: 10
+  m_ForceVariation: 0
+  m_ForceTarget: 0
+  m_Drag: 0
+  m_AngularDrag: 0

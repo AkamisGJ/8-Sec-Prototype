@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Death_Spike : MonoBehaviour
 {
+    [SerializeField] private long _vibrationDuration = 100;
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            GameManager.Instance.RestartLevel();
+            Vibration.Vibrate(_vibrationDuration);
+            StartCoroutine(RestartLevel());
         }
+    }
+
+    private IEnumerator RestartLevel()
+    {
+        yield return new WaitForSeconds(_vibrationDuration / 1000);
+        GameManager.Instance.RestartLevel();
     }
 }

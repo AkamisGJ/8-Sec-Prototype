@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7038444412170892024}
   - component: {fileID: 7038444412170892025}
   - component: {fileID: 8427029317472344475}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Object Physics
   m_TagString: PhysicObject
   m_Icon: {fileID: 0}
@@ -145,4 +145,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gravityDirection: {x: 0, y: -9.8}
   _externalGravity: {x: 0, y: 0}
+  is_Asteroide: 0
   _personalGravityMultiplier: 1

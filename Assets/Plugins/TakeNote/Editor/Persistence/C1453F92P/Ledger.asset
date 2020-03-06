@@ -83,7 +83,7 @@ MonoBehaviour:
     HasDetails: 1
     Details: "EN build :\n\nPas de FX pour les \xE9toile\nCamera en dehors du menu
       pour le main menu\nLe compteur de mouvement qui double quand on change de scene
-      par Nody"
+      par Nody\n\nLe Tuto ne disparait pas a chaque fois "
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1
@@ -97,6 +97,46 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0.26237094, g: 0.8301887, b: 0.74106985, a: 1}
+  - Title: "Installer OPENGL ES3 en API par default pour le render des \xE9toiles
+      avec VFXGraph"
+    CreationDate: 06/03/2020 | 16:01
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 0
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Play Test Session
+    CreationDate: 06/03/2020 | 18:13
+    CompletionDate: 
+    HasDetails: 1
+    Details: "Ajouter des vibrations\nMettre les mouvement fait / mouvement max\nblock
+      vert ne ce voit pas dans les zone jaune\nPassage de l'\xE9toile sur le niveau
+      8 trop dur\ncompteur de mouvement bug (a cause du loading de scene par Nody)\nFX
+      quand on gagne un niveau"
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.97381586, g: 1, b: 0.1462264, a: 1}
+  - Title: Loading Screen
+    CreationDate: 06/03/2020 | 18:50
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 1, g: 1, b: 1, a: 1}
+  - Title: Coder Level Selector
+    CreationDate: 06/03/2020 | 18:52
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.9622642, g: 0.32226774, b: 0.32226774, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
