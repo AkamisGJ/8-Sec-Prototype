@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 6742495460908397384, guid: 7e3b2ebcd523967409d235acd0fd8bf5,
         type: 3}
       propertyPath: m_Name
-      value: "Ast\xE9roide enfant med 1"
+      value: "Ast\xE9roide enfant med 1 Variant"
       objectReference: {fileID: 0}
     - target: {fileID: 6742495460908397385, guid: 7e3b2ebcd523967409d235acd0fd8bf5,
         type: 3}
@@ -252,6 +252,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.85882354
       objectReference: {fileID: 0}
+    - target: {fileID: 6742495460908397391, guid: 7e3b2ebcd523967409d235acd0fd8bf5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2da56e75142ce1145ad6fe7df662330e, type: 2}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 7e3b2ebcd523967409d235acd0fd8bf5, type: 3}

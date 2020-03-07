@@ -80,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 522064766438573284, guid: b69b2b08930e87a449c43f015f048d89,
         type: 3}
       propertyPath: m_Name
-      value: "Ast\xE9roide enfant big 2"
+      value: "Ast\xE9roide enfant big 2 Variant"
       objectReference: {fileID: 0}
     - target: {fileID: 522064766438573285, guid: b69b2b08930e87a449c43f015f048d89,
         type: 3}

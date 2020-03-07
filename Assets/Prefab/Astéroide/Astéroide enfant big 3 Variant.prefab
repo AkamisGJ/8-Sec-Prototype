@@ -225,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 3885355283602290765, guid: bada60c69dc4f7647919b3c3ea576381,
         type: 3}
       propertyPath: m_Name
-      value: "Ast\xE9roide enfant big 3"
+      value: "Ast\xE9roide enfant big 3 Variant"
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
