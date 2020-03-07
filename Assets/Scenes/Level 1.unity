@@ -709,18 +709,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29aaa8c2452d7c944a2a20bac056e135, type: 3}
---- !u!114 &764585684167089266 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7620400512760474692, guid: 93e48b8a44b15e64e83ea352215fb1fb,
-    type: 3}
-  m_PrefabInstance: {fileID: 7159952944885542966}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8195ea2489712d34184da051c2cb7360, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &868200030744889496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -786,21 +774,6 @@ PrefabInstance:
     - target: {fileID: 868200029166078809, guid: 111008b048d642f43b61c30f0f81fad1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 868200029166078809, guid: 111008b048d642f43b61c30f0f81fad1,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.40623602
-      objectReference: {fileID: 0}
-    - target: {fileID: 868200029166078809, guid: 111008b048d642f43b61c30f0f81fad1,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.404998
-      objectReference: {fileID: 0}
-    - target: {fileID: 868200029166078809, guid: 111008b048d642f43b61c30f0f81fad1,
-        type: 3}
-      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1247,7 +1220,7 @@ PrefabInstance:
         type: 3}
       propertyPath: etoileBonus
       value: 
-      objectReference: {fileID: 764585684167089266}
+      objectReference: {fileID: 0}
     - target: {fileID: 6367952548031358638, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
         type: 3}
       propertyPath: HideBehavior.Animation.Move.AnimationCurve.m_Curve.Array.size
