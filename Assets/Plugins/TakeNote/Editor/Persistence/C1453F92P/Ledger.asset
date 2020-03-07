@@ -83,7 +83,9 @@ MonoBehaviour:
     HasDetails: 1
     Details: "EN build :\n\nPas de FX pour les \xE9toile\nCamera en dehors du menu
       pour le main menu\nLe compteur de mouvement qui double quand on change de scene
-      par Nody\n\nLe Tuto ne disparait pas a chaque fois "
+      par Nody\n\nLe Tuto ne disparait pas a chaque fois, er sa fait buger le jeu\nDes
+      collision ne sont pas bonne dans le niveau 3\nLa zone fait monter en haut dans
+      le niveau 7"
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1

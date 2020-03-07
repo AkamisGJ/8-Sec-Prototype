@@ -50,8 +50,8 @@ MonoBehaviour:
       multiplicative: 0
       additive: 0
   m_UseDepthStencilBuffer: 0
-  m_DefaultMaterialType: 0
-  m_DefaultCustomMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3,
+  m_DefaultMaterialType: 2
+  m_DefaultCustomMaterial: {fileID: 2100000, guid: 2da56e75142ce1145ad6fe7df662330e,
     type: 2}
   m_DefaultLitMaterial: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3,
     type: 2}
