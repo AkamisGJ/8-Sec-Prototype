@@ -12,6 +12,7 @@ public class Death_Spike : MonoBehaviour
         {
             Vibration.Vibrate(_vibrationDuration);
             StartCoroutine(RestartLevel());
+            //GetComponent<AudioSource>().Play();
         }
     }
 

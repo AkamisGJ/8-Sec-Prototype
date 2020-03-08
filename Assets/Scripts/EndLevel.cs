@@ -11,6 +11,7 @@ public class EndLevel : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            GetComponent<AudioSource>().Play();
             GameManager.Instance.EndLevel();
         }
     }
