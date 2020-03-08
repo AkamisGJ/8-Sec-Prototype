@@ -159,6 +159,7 @@ public class GameManager : Singleton<GameManager>
                 SwipeDetector.Instance.PlaySoundSwipe();
             }
 
+            Physics2D.gravity = _gravityDirection * _gravityMultiplier;
             ResetAcceleration();
         }
     }
@@ -184,13 +185,6 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    private void FixedUpdate()
-    {
-        /*
-         * Permet de modifer toute la gravité de la scene. Comportement réaliste
-         */
-        Physics2D.gravity = _gravityDirection * _gravityMultiplier;
-    }
 
     public void ResetAcceleration()
     {

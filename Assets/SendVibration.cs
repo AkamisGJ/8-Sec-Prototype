@@ -11,13 +11,4 @@ public class SendVibration : MonoBehaviour
         long millisecondLong = millisecond;
         Vibration.Vibrate(millisecondLong);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.transform.tag.Equals(Player.Instance.transform.tag))
-        {
-            print("Player Collide with world");
-            VibrateOnce(_millisecond);
-        }
-    }
 }
