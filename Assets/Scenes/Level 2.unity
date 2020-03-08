@@ -1048,11 +1048,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2536906295453657862, guid: c089862411f61f94dbf45d1740c5da96,
-        type: 3}
-      propertyPath: etoileBonus
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 3285210229428655339, guid: c089862411f61f94dbf45d1740c5da96,
         type: 3}
       propertyPath: m_Name

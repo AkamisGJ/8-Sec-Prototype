@@ -41,11 +41,16 @@ public class GameManager : Singleton<GameManager>
 
     private ParticleSystem etoileBonus = null;
 
+    [SerializeField] private bool _isMenu = false;
+
 
 
     private void Start() {
 #if UNITY_ANDROID
-        SwipeDetector.OnSwipe += ChangeGravity;
+        if(_isMenu == false)
+        {
+            SwipeDetector.OnSwipe += ChangeGravity;
+        }
 #endif
         _player = Player.Instance.GetComponent<Rigidbody2D>();
         foreach(Physic_Movement physic_object in FindObjectsOfType<Physic_Movement>())
@@ -53,7 +58,10 @@ public class GameManager : Singleton<GameManager>
             movingObjects.Add(physic_object);
         }
 
-        etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponentInChildren<ParticleSystem>();
+        if(_isMenu == false)
+        {
+            etoileBonus = GameObject.FindGameObjectWithTag("etoile_bonus").GetComponentInChildren<ParticleSystem>();
+        }
     }
 
 #if UNITY_WEBGL
@@ -213,6 +221,10 @@ public class GameManager : Singleton<GameManager>
 
     public void LoadScene(int buildIndex)
     {
+        if (_isMenu == false)
+        {
+            SwipeDetector.OnSwipe -= ChangeGravity;
+        }
         SceneManager.LoadScene(buildIndex);
     }
 

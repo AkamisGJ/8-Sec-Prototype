@@ -1350,15 +1350,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 85802934, guid: c089862411f61f94dbf45d1740c5da96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 85802936, guid: c089862411f61f94dbf45d1740c5da96, type: 3}
       propertyPath: m_graphModel
       value: 
       objectReference: {fileID: 11400000, guid: 8c6b5f3074a878e49bfabd83bd1c7e2a,
         type: 2}
+    - target: {fileID: 465799941, guid: c089862411f61f94dbf45d1740c5da96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 574981201, guid: c089862411f61f94dbf45d1740c5da96, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2536906295453657880, guid: c089862411f61f94dbf45d1740c5da96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285210229222277028, guid: c089862411f61f94dbf45d1740c5da96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3285210229388022026, guid: c089862411f61f94dbf45d1740c5da96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3285210229428655339, guid: c089862411f61f94dbf45d1740c5da96,
         type: 3}
       propertyPath: m_Name
-      value: Canvas - GameCanvas - Tutoriel
+      value: Canvas - GameCanvas - Tutoriel Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3285210229428655342, guid: c089862411f61f94dbf45d1740c5da96,
         type: 3}
@@ -1475,7 +1502,13 @@ PrefabInstance:
       propertyPath: maximumMovementForThisLevel
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5182868635146945139, guid: c089862411f61f94dbf45d1740c5da96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3285210229428655341, guid: c089862411f61f94dbf45d1740c5da96, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c089862411f61f94dbf45d1740c5da96, type: 3}
 --- !u!224 &3613529326476848280 stripped
 RectTransform:

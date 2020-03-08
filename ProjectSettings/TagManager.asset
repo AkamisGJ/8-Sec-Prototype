@@ -7,6 +7,9 @@ TagManager:
   - PhysicObject
   - Trail_Tuto
   - etoile_bonus
+  - movemenent_counter
+  - stage_counter
+  - movement_counter
   layers:
   - Default
   - TransparentFX

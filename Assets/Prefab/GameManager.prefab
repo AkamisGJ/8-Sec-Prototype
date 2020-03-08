@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 4190864165193414649}
   - component: {fileID: 8059037623428344350}
   - component: {fileID: 5746759615816840499}
+  - component: {fileID: 1557446918}
+  - component: {fileID: 1557446919}
+  - component: {fileID: 4190864164992756171}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameController
@@ -28,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 4190864165193414631}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 51.83109, y: 51.83109, z: 51.83109}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -47,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gravityDirection: {x: 0, y: -9.8}
   _externalGravity: {x: 0, y: 0}
-  _gravityMultiplier: 2
+  _gravityMultiplier: 1
   _direction: 0
   actualBlocking: 2
   _gravityDown: {x: 0, y: -9.8}
@@ -56,11 +59,30 @@ MonoBehaviour:
   _gravityLeft: {x: -9.8, y: 0}
   _accelerationSpeedCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 1.8983891
+      outSlope: 1.8983891
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08680576
+    - serializedVersion: 3
+      time: 3
+      value: 3
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
   _accelerationValue: 0
+  _isMenu: 0
 --- !u!114 &8059037623428344350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,3 +191,47 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1557446918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190864165193414631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 028472b123b82d84581ce50c233c21b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logging: 0
+--- !u!114 &1557446919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190864165193414631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5569c274d4e51324aaae8e6f20d08376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  detectSwipeOnlyAfterRelease: 1
+  minDistanceForSwipe: 20
+--- !u!114 &4190864164992756171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190864165193414631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ac23e761b3ffd4ba6b5b05aa24bfe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starsView:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  maximumMovementForThisLevel: 4

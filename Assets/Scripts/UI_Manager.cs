@@ -13,6 +13,7 @@ public class UI_Manager : Singleton<UI_Manager>
     private void Start()
     {
         _stageCounter.text = "Stage " + SceneManager.GetActiveScene().buildIndex;
+       
     }
 
 
