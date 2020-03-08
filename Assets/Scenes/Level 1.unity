@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -308,65 +308,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b439333b74f0f24bbbd319829ab862b, type: 3}
---- !u!1 &505935671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 505935672}
-  - component: {fileID: 505935673}
-  m_Layer: 5
-  m_Name: Gesture Listener (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &505935672
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505935671}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1416748352}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &505935673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505935671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8918a95cfc47ce97130746534b73f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DebugMode: 0
-  GlobalListener: 1
-  OverrideTarget: 0
-  TargetGameObject: {fileID: 505935671}
-  GestureType: 2
-  SwipeDirection: 3
-  OnGestureEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  GameEvents:
-  - Succes_Tutorial
 --- !u!4 &519997998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6742495460908397388, guid: 7e3b2ebcd523967409d235acd0fd8bf5,
@@ -421,65 +362,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1760089364}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1259592664
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259592665}
-  - component: {fileID: 1259592666}
-  m_Layer: 5
-  m_Name: Gesture Listener (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1259592665
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259592664}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1416748352}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1259592666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259592664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe8918a95cfc47ce97130746534b73f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DebugMode: 0
-  GlobalListener: 1
-  OverrideTarget: 0
-  TargetGameObject: {fileID: 1259592664}
-  GestureType: 2
-  SwipeDirection: 1
-  OnGestureEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  GameEvents:
-  - Succes_Tutorial
 --- !u!4 &1282926014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5958201780449748451, guid: 360d7d060f8eb754092725245dc7f7b1,
@@ -558,12 +440,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &1416748352 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3613529326476848280, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
-    type: 3}
-  m_PrefabInstance: {fileID: 8791330091078517369}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1482216176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 780916569005997458, guid: 4de8e8e1e14c6d345a3749022d88b700,
@@ -1364,11 +1240,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2709562013839151549, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
-        type: 3}
-      propertyPath: maximumMovementForThisLevel
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3613529326476848280, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1483,11 +1354,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas - Tutoriel
-      objectReference: {fileID: 0}
-    - target: {fileID: 8791330092201874072, guid: 8825dbeaffc93d24f9ebc10c6abdd879,
-        type: 3}
-      propertyPath: SwipeDirection
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8825dbeaffc93d24f9ebc10c6abdd879, type: 3}

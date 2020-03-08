@@ -10620,7 +10620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 328.53613, y: -39.474243}
+  m_AnchoredPosition: {x: 329, y: -39}
   m_SizeDelta: {x: 130, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5182868634040285638
@@ -10701,7 +10701,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5182868634040285637}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2536906295453657862}
+        m_MethodName: LoadScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5182868634040285635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17017,6 +17028,11 @@ PrefabInstance:
       propertyPath: starsView.Array.data[2]
       value: 
       objectReference: {fileID: 5182868634290549507}
+    - target: {fileID: 4190864164992756171, guid: 110a4f4559776a24587050c133a11a56,
+        type: 3}
+      propertyPath: maximumMovementForThisLevel
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4190864165193414631, guid: 110a4f4559776a24587050c133a11a56,
         type: 3}
       propertyPath: m_Name
