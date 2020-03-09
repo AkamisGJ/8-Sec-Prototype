@@ -20,7 +20,7 @@ public class GameMusicPlayer : MonoBehaviour
         {
             instance = this;
         }
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 }
      // any other methods you need

@@ -13,93 +13,16 @@ MonoBehaviour:
   m_Name: Ledger
   m_EditorClassIdentifier: 
   OutstandingTasks:
-  - Title: Ajouter des sound Effect + de la musique
-    CreationDate: 04/03/2020 | 19:33
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
-  - Title: Sigh et Feedback
-    CreationDate: 04/03/2020 | 23:57
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.4533586, g: 0.8396226, b: 0.29703632, a: 1}
-  - Title: Univers Spacial visuel
-    CreationDate: 04/03/2020 | 23:57
-    CompletionDate: 
-    HasDetails: 1
-    Details: "Ajouter \xE9l\xE9ment graphique"
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.29803923, g: 0.46746796, b: 0.8392157, a: 1}
-  - Title: Dernier niveau a revoir "Pacing"
-    CreationDate: 04/03/2020 | 23:58
-    CompletionDate: 
-    HasDetails: 1
-    Details: Et niveau 8
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.29803923, g: 0.46746796, b: 0.8392157, a: 1}
-  - Title: Light 2D
-    CreationDate: 05/03/2020 | 00:34
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
-  - Title: Changer le Gesture detecotor par celui de Doozy pour faire une version
-      WebL
-    CreationDate: 05/03/2020 | 01:36
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
   - Title: BUG TRACKER
     CreationDate: 05/03/2020 | 06:39
     CompletionDate: 
     HasDetails: 1
-    Details: "EN build :\n\nPas de FX pour les \xE9toile\nCamera en dehors du menu
-      pour le main menu\nLe compteur de mouvement qui double quand on change de scene
-      par Nody\n\nLe Tuto ne disparait pas a chaque fois, er sa fait buger le jeu\nDes
-      collision ne sont pas bonne dans le niveau 3\nLa zone fait monter en haut dans
-      le niveau 7"
+    Details: "EN build :\n\nCamera en dehors du menu pour le main menu\nBug exit
+      lvl 5\nSou superpos\xE9\nbug affichage lbl 8\nAjouter skin"
     IsCompleted: 0
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0, g: 0, b: 0, a: 1}
-  - Title: Add swipe with mouse
-    CreationDate: 05/03/2020 | 16:45
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.26237094, g: 0.8301887, b: 0.74106985, a: 1}
-  - Title: "Installer OPENGL ES3 en API par default pour le render des \xE9toiles
-      avec VFXGraph"
-    CreationDate: 06/03/2020 | 16:01
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 0
-    DrawColor: {r: 1, g: 1, b: 1, a: 1}
   - Title: Play Test Session
     CreationDate: 06/03/2020 | 18:13
     CompletionDate: 
@@ -121,15 +44,6 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 1, g: 1, b: 1, a: 1}
-  - Title: Coder Level Selector
-    CreationDate: 06/03/2020 | 18:52
-    CompletionDate: 
-    HasDetails: 0
-    Details: 
-    IsCompleted: 0
-    IsDeferred: 0
-    IsColored: 1
-    DrawColor: {r: 0.9622642, g: 0.32226774, b: 0.32226774, a: 1}
   CompletedTasks:
   - Title: Ajouter controlle Android
     CreationDate: 04/03/2020 | 13:48
@@ -205,4 +119,77 @@ MonoBehaviour:
     IsDeferred: 0
     IsColored: 1
     DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
-  DeferredTasks: []
+  - Title: Ajouter des sound Effect + de la musique
+    CreationDate: 04/03/2020 | 19:33
+    CompletionDate: 09/03/2020 | 00:48
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0, g: 1, b: 0.050857544, a: 1}
+  - Title: Univers Spacial visuel
+    CreationDate: 04/03/2020 | 23:57
+    CompletionDate: 09/03/2020 | 00:48
+    HasDetails: 1
+    Details: "Ajouter \xE9l\xE9ment graphique"
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.29803923, g: 0.46746796, b: 0.8392157, a: 1}
+  - Title: Dernier niveau a revoir "Pacing"
+    CreationDate: 04/03/2020 | 23:58
+    CompletionDate: 09/03/2020 | 00:48
+    HasDetails: 1
+    Details: Et niveau 8
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.29803923, g: 0.46746796, b: 0.8392157, a: 1}
+  - Title: Light 2D
+    CreationDate: 05/03/2020 | 00:34
+    CompletionDate: 09/03/2020 | 00:48
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
+  - Title: Coder Level Selector
+    CreationDate: 06/03/2020 | 18:52
+    CompletionDate: 09/03/2020 | 00:51
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.9622642, g: 0.32226774, b: 0.32226774, a: 1}
+  - Title: Sigh et Feedback
+    CreationDate: 04/03/2020 | 23:57
+    CompletionDate: 09/03/2020 | 01:09
+    HasDetails: 0
+    Details: 
+    IsCompleted: 1
+    IsDeferred: 0
+    IsColored: 1
+    DrawColor: {r: 0.4533586, g: 0.8396226, b: 0.29703632, a: 1}
+  DeferredTasks:
+  - Title: Changer le Gesture detecotor par celui de Doozy pour faire une version
+      WebL
+    CreationDate: 05/03/2020 | 01:36
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 1
+    IsColored: 1
+    DrawColor: {r: 0.77032304, g: 0.29803923, b: 0.8392157, a: 1}
+  - Title: Add swipe with mouse
+    CreationDate: 05/03/2020 | 16:45
+    CompletionDate: 
+    HasDetails: 0
+    Details: 
+    IsCompleted: 0
+    IsDeferred: 1
+    IsColored: 1
+    DrawColor: {r: 0.26237094, g: 0.8301887, b: 0.74106985, a: 1}

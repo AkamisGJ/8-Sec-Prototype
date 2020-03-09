@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3053,7 +3053,7 @@ RectTransform:
   m_GameObject: {fileID: 229154530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.804824, y: 0.804824, z: 0.804824}
+  m_LocalScale: {x: 0.90000004, y: 0.90000004, z: 0.90000004}
   m_Children: []
   m_Father: {fileID: 860480104}
   m_RootOrder: 0
@@ -15938,7 +15938,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 26c9bcdd838cbdf42961729086ce1e41, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -30129,7 +30129,7 @@ PrefabInstance:
     - target: {fileID: 2500031764645482202, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2500031764645482202, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
@@ -30149,7 +30149,7 @@ PrefabInstance:
     - target: {fileID: 2500031764645482202, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
       propertyPath: m_text
-      value: Skin
+      value: Shop
       objectReference: {fileID: 0}
     - target: {fileID: 2500031764645482202, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
@@ -39254,7 +39254,7 @@ PrefabInstance:
     - target: {fileID: 2500031763656270471, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -126.94998
+      value: -95.10129
       objectReference: {fileID: 0}
     - target: {fileID: 2500031763656270471, guid: 8502eabe669b10c40a0d113d19cc0a4d,
         type: 3}

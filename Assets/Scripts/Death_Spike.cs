@@ -6,12 +6,14 @@ public class Death_Spike : MonoBehaviour
 {
     [SerializeField] private long _vibrationDuration = 100;
 
+
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             Vibration.Vibrate(_vibrationDuration);
             StartCoroutine(RestartLevel());
+            
             //GetComponent<AudioSource>().Play();
         }
     }
